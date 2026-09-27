@@ -1,0 +1,33 @@
+# Unreal Engine generated build artifacts
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+*.umap
+*.uasset
+*.ubulk
+*.upk
+
+# Python
+__pycache__/
+*.pyc
+
+# Local runtime data (previews, reports, demos) - never publish
+Data/Demo/
+Data/Reports/
+Data/Assets/m2a/
+Data/Assets/m3a/
+Content/Generated/
+
+# Credentials & local config - never publish
+.env
+*.env
+*.local.ini
+
+# Editor/OS noise
+.vs/
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

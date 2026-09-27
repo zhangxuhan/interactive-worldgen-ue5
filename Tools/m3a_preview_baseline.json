@@ -1,0 +1,28 @@
+{
+  "_note": "Locked visual baseline for the M3a previews (m3a_previews.py). Single source of truth used by BOTH Tools/m3a_chain.sh and the local web demo (Tools/m3a_web.py), so a scripted rebuild and a web-triggered generation render exactly the same framing. Do not tune these by hand in the editor: change them here and rebuild.",
+  "_brightness": "The engine exposure in this project is effectively FIXED (per-capture override, unbound PostProcessVolume and the r.DefaultFeature.AutoExposure.* CVars were all measured to leave the frame bit-identical). Scene brightness is therefore calibrated in the light rig, not here - see LIGHT_RIG_SCALE in Tools/m2bs_polish_level.py and Docs/M3a_VisualAndWeb.md. The exposure block below is still passed to the capture for documentation and is expected to have no effect.",
+  "showcase_frames": 240,
+  "showcase_fps": 20,
+  "still_w": 1600,
+  "still_h": 900,
+  "clip_w": 1280,
+  "clip_h": 720,
+  "overview_fov": 60,
+  "overview_fit": 1.03,
+  "overview_az_offset": 30,
+  "overview_elevation": 50,
+  "eye_fov": 78,
+  "eye_height": 165,
+  "desk_dist": 245,
+  "desk_fov": 55,
+  "key_dist": 75,
+  "key_fov": 42,
+  "exit_dist": 330,
+  "exit_fov": 60,
+  "clip_fov": 68,
+  "exposure": {
+    "mode": "manual",
+    "ev100": 6.0,
+    "bloom": 0.4
+  }
+}

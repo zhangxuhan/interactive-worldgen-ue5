@@ -1,0 +1,62 @@
+{
+  "manifest_version": "0.1",
+  "note": "Asset manifest: maps the 'asset_id' emitted in build-plan JSON entries to generated UE assets (M2b pipeline; SceneSpec object ids are NOT lookup keys anymore). m1b_build_level.py resolves each plan entry by its asset_id: a ready entry is used and logged as 'M2B HIT'; the explicit id 'placeholder' becomes a labelled placeholder ('M2B PLACEHOLDER'); any other unknown id falls back to the placeholder cube and logs 'M2B FALLBACK' with the object id, asset_id and reason.",
+  "updated_at": "2026-09-26T18:36+09:00",
+  "assets": [
+    {
+      "asset_id": "m2a_desk_001",
+      "spec_object_ids": [
+        "desk_01"
+      ],
+      "source": "Hunyuan3D-2.1 shape-only image-to-mesh (local inference, RTX 5080 16GB)",
+      "source_model": "tencent/Hunyuan3D-2.1 (hunyuan3d-dit-v2-1 + hunyuan3d-vae-v2-1)",
+      "license": "tencent-hunyuan-community",
+      "input_image": "Data/Assets/m2a/input/A_simple_minimalist_wooden_wor_2026-09-25T13-55-19.png",
+      "input_image_origin": "AI-generated (WorkBuddy ImageGen), full usage rights",
+      "raw_mesh": "Data/Assets/m2a/raw/raw_mesh.glb",
+      "raw_sha256": "b9365d7bc42d6c69b8d1c855f99045fe56d68c217596c2955ca8e2e0edb6b4cd",
+      "inference_params": "Data/Assets/m2a/raw/params.json",
+      "normalized_obj": "Data/Assets/m2a/normalized/normalized_mesh.obj",
+      "normalized_sha256": "47d5dc3d65696dc9f7c8d5b4c38535f282cddf359ce69dde531d4a247cdb5e72",
+      "target_size_cm": [
+        140.0,
+        70.0,
+        75.0
+      ],
+      "orientation": "up=+Z, long axis=+X, applied with plan yaw_deg=90",
+      "pivot": "bottom_center",
+      "ue_asset_path": "/Game/Generated/Assets/M2A_desk_001",
+      "triangles": 701868,
+      "collision": "simple box 140x70x75 on the static mesh + BlockAll profile",
+      "status": "ready",
+      "error": null,
+      "import_report": "Data/Reports/m2a_import_report.json",
+      "inference_log": "Data/Reports/m2a_inference.log",
+      "raw_params": {
+        "model": "tencent/Hunyuan3D-2.1 (hunyuan3d-dit-v2-1 + hunyuan3d-vae-v2-1, local ckpt)",
+        "pipeline": "Hunyuan3DDiTFlowMatchingPipeline (shape only)",
+        "seed": 20260925,
+        "steps": 50,
+        "octree_resolution": 384,
+        "guidance_scale": 7.5,
+        "mc_level": -0.001953125,
+        "image": "Data/Assets/m2a/input/A_simple_minimalist_wooden_wor_2026-09-25T13-55-19.png",
+        "torch": "2.11.0+cu128",
+        "gpu": "NVIDIA GeForce RTX 5080",
+        "generation_seconds": 67.3,
+        "vertices": 350932,
+        "faces": 701868,
+        "bounds_min": [
+          -1.0,
+          -0.5464,
+          -0.5214
+        ],
+        "bounds_max": [
+          0.9946,
+          0.543,
+          0.5158
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "plan_version": "0.1",
+  "source_spec": "scene_spec.json",
+  "scene_id": "StorageRoomKeyQuest",
+  "seed": 42,
+  "level_path": "/Game/Generated/StorageRoomKeyQuest",
+  "wall_thickness_cm": 20.00,
+  "door_height_cm": 220.00,
+  "note": "object box ops carry the SceneSpec asset_id (M2b); the Python executor resolves it against Data/Assets/asset_manifest.json and falls back to the placeholder cube for unregistered/not-ready ids",
+  "ops": [
+    {"op":"box","name":"WG_Floor","size_cm":[540.00,740.00,20.00],"location_cm":[0.00,0.00,-10.00],"yaw_deg":0.00},
+    {"op":"box","name":"WG_Wall_North","size_cm":[20.00,740.00,280.00],"location_cm":[250.00,0.00,140.00],"yaw_deg":0.00},
+    {"op":"box","name":"WG_Wall_South","size_cm":[20.00,740.00,280.00],"location_cm":[-250.00,0.00,140.00],"yaw_deg":0.00},
+    {"op":"box","name":"WG_Wall_East_A","size_cm":[310.00,20.00,280.00],"location_cm":[-115.00,350.00,140.00],"yaw_deg":0.00},
+    {"op":"box","name":"WG_Wall_East_B","size_cm":[110.00,20.00,280.00],"location_cm":[215.00,350.00,140.00],"yaw_deg":0.00},
+    {"op":"box","name":"WG_Wall_East_Lintel","size_cm":[120.00,20.00,60.00],"location_cm":[100.00,350.00,250.00],"yaw_deg":0.00},
+    {"op":"box","name":"WG_Wall_West_A","size_cm":[310.00,20.00,280.00],"location_cm":[-115.00,-350.00,140.00],"yaw_deg":0.00},
+    {"op":"box","name":"WG_Wall_West_B","size_cm":[110.00,20.00,280.00],"location_cm":[215.00,-350.00,140.00],"yaw_deg":0.00},
+    {"op":"box","name":"WG_Wall_West_Lintel","size_cm":[120.00,20.00,60.00],"location_cm":[100.00,-350.00,250.00],"yaw_deg":0.00},
+    {"op":"box","name":"WG_Apron_Exit","size_cm":[200.00,310.00,20.00],"location_cm":[100.00,505.00,-10.00],"yaw_deg":0.00},
+    {"op":"exit_trigger","name":"WG_ExitTrigger","location_cm":[100.00,660.00,0.00],"yaw_deg":0.00},
+    {"op":"directional_light","name":"WG_Sun","location_cm":[0.00,0.00,500.00],"pitch_deg":-55.00,"yaw_deg":30.00},
+    {"op":"sky_light","name":"WG_Sky","location_cm":[0.00,0.00,300.00],"yaw_deg":0.00},
+    {"op":"player_start","name":"WG_PlayerStart","location_cm":[100.00,-270.00,100.00],"yaw_deg":90.00},
+    {"op":"door","name":"WG_ExitDoor","location_cm":[160.00,350.00,0.00],"yaw_deg":90.00},
+    {"op":"box","name":"WG_obj_work_desk","asset_id":"m2a_desk_001","size_cm":[140.00,70.00,75.00],"location_cm":[-180.00,0.00,37.50],"yaw_deg":0.00},
+    {"op":"box","name":"WG_obj_wooden_crate","asset_id":"placeholder","size_cm":[80.00,80.00,80.00],"location_cm":[-180.00,150.00,40.00],"yaw_deg":0.00},
+    {"op":"pickup","name":"WG_obj_quest_key","location_cm":[-180.00,0.00,75.00],"yaw_deg":0.00}
+  ]
+}

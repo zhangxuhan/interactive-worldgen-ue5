@@ -1,0 +1,85 @@
+{
+  "schema_version": "0.1",
+  "scene_id": "StorageRoomKeyQuest",
+  "seed": 42,
+  "room": {
+    "width_cm": 500,
+    "length_cm": 700,
+    "height_cm": 280
+  },
+  "entrance": {
+    "wall": "west",
+    "offset_cm": 350,
+    "width_cm": 120
+  },
+  "exit": {
+    "wall": "east",
+    "offset_cm": 350,
+    "width_cm": 120,
+    "locked": true
+  },
+  "agent": {
+    "radius_cm": 35,
+    "height_cm": 180
+  },
+  "objects": [
+    {
+      "id": "work_desk",
+      "semantic_type": "desk",
+      "asset_id": "m2a_desk_001",
+      "target_size_cm": [
+        140,
+        70,
+        75
+      ],
+      "placement": {
+        "position_cm": [
+          -180,
+          0
+        ],
+        "rotation_deg": 0
+      },
+      "collision_policy": "simple",
+      "nav_obstacle": true,
+      "priority": "required"
+    },
+    {
+      "id": "wooden_crate",
+      "semantic_type": "crate",
+      "asset_id": "placeholder",
+      "target_size_cm": [
+        80,
+        80,
+        80
+      ],
+      "placement": {
+        "position_cm": [
+          -180,
+          150
+        ],
+        "rotation_deg": 0
+      },
+      "collision_policy": "simple",
+      "nav_obstacle": true,
+      "priority": "required"
+    },
+    {
+      "id": "quest_key",
+      "semantic_type": "pickup",
+      "asset_id": "key_placeholder",
+      "target_size_cm": [
+        30,
+        30,
+        30
+      ],
+      "placement": {
+        "on_top_of": "work_desk"
+      },
+      "priority": "required"
+    }
+  ],
+  "objective": {
+    "type": "collect_then_exit",
+    "item_id": "quest_key"
+  }
+}

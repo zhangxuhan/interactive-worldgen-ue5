@@ -1,0 +1,28 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "5.7",
+	"Category": "WorldGen",
+	"Description": "Generative 3D world pipeline. M0 baseline: dual-module C++ project with a manually built test level.",
+	"Modules": [
+		{
+			"Name": "WorldGenRuntime",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "WorldGenEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "PythonScriptPlugin",
+			"Enabled": true
+		},
+		{
+			"Name": "EditorScriptingUtilities",
+			"Enabled": true
+		}
+	]
+}

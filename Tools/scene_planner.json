@@ -1,0 +1,7 @@
+{
+  "model": "glm-5.3-flash",
+  "base_url": "https://open.bigmodel.cn/api/paas/v4",
+  "max_retries": 2,
+  "timeout_seconds": 120,
+  "note": "API key is NEVER stored here; it is read only from the WORLDGEN_LLM_API_KEY (or ZHIPUAI_API_KEY) environment variable. Model/base_url can be overridden by WORLDGEN_LLM_MODEL / WORLDGEN_LLM_BASE_URL."
+}
