@@ -8,6 +8,8 @@
 </p>
 
 ---
+<img width="800" height="450" alt="GenWorld" src="https://github.com/user-attachments/assets/723aa8a3-59da-4290-8d50-f4841fbaea80" />
+
 
 <a id="zh"></a>
 ## 中文
